@@ -13,13 +13,11 @@
 #define TFT_MOSI 23
 #define BUTTON_PIN 13
 
-// WiFi
-char* SSID = "Airtel_Virus_5G";
-const char* PASSWORD = "Anil/1919";
+char* SSID = "WIFI_SSID";
+const char* PASSWORD = "WIFI_PASS";
 
-// Spotify
-const char* CLIENT_ID = "769001bf34a9492eabf8045cea17db3d";
-const char* CLIENT_SECRET = "6e1c80a20c5d4c9c95be544c88c67e69";
+const char* CLIENT_ID = "CLIENT_ID";
+const char* CLIENT_SECRET = "CLIENT_SECRET";
 
 Spotify sp(CLIENT_ID, CLIENT_SECRET);
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
@@ -27,7 +25,6 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RS
 String lastTrack = "";
 String lastArtist = "";
 
-// progress simulation
 unsigned long songStartTime = 0;
 int fakeDuration = 180000; // 3 mins
 
@@ -43,23 +40,18 @@ void drawSpotifyLogo(int x, int y) {
 void drawControls(bool isPlaying) {
     int y = 110;
 
-    // ⏮️ BACK
     tft.drawCircle(40, y, 10, ST77XX_WHITE);
     tft.fillTriangle(36, y, 44, y - 6, 44, y + 6, ST77XX_WHITE);
 
-    // ⏯️ PLAY / PAUSE
     tft.drawCircle(80, y, 10, ST77XX_WHITE);
 
     if (isPlaying) {
-        // pause icon
         tft.fillRect(76, y - 6, 3, 12, ST77XX_WHITE);
         tft.fillRect(82, y - 6, 3, 12, ST77XX_WHITE);
     } else {
-        // play icon
         tft.fillTriangle(76, y - 6, 76, y + 6, 86, y, ST77XX_WHITE);
     }
 
-    // ⏭️ NEXT
     tft.drawCircle(120, y, 10, ST77XX_WHITE);
     tft.fillTriangle(124, y, 116, y - 6, 116, y + 6, ST77XX_WHITE);
 }
