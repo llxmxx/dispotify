@@ -11,7 +11,6 @@
 #define TFT_DC 2
 #define TFT_SCLK 18
 #define TFT_MOSI 23
-#define BUTTON_PIN 13
 
 char* SSID = "WIFI_SSID";
 const char* PASSWORD = "WIFI_PASS";
@@ -70,11 +69,9 @@ void drawUI(String track, String artist) {
     tft.setCursor(35, 20);
     tft.print(artist);
 
-    // progress bar outline
     tft.drawRect(10, 90, 140, 5, ST77XX_WHITE);
     drawControls(sp.is_playing());
 
-    // reset timer
     songStartTime = millis();
 }
 
@@ -94,7 +91,6 @@ void updateProgressBar() {
 }
 
 void setup() {
-    pinMode(BUTTON_PIN, INPUT_PULLUP);
     Serial.begin(115200);
 
     tft.initR(INITR_BLACKTAB);
@@ -133,11 +129,4 @@ void loop() {
 
         drawUI(track, artist);
     }
-
-    updateProgressBar();
-    if (digitalRead(BUTTON_PIN) == LOW) {
-        sp.skip();
-    }
-
-    delay(200);
 }
