@@ -1,4 +1,4 @@
-spotify diplay that shows currently playing spotify track using esp32, says "hi [my name]" on startup, working on adding buttons to the code.
+spotify diplay that shows currently playing spotify track using esp32. it says "hi [my name]" on startup, loads after authentication to the track name and artist, the progress bar is a fake, working on adding functioning buttons to the code. the spotify logo is drawn and hence looks offbrand.
 i built this project because i've wanted to get into hardware for really long now, and this one seemed fairly easy compared to the other starter projects, and it looked cute too.
 
 <img width="912" height="572" alt="image" src="https://github.com/user-attachments/assets/9899726c-cad2-44c9-aadc-6425c90f528c" />
