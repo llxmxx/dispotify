@@ -9,6 +9,7 @@
 <img width="840" height="508" alt="image" src="https://github.com/user-attachments/assets/59654fe8-2ed5-4c05-b6e9-e55418753fa5" />
 
 <h6>Wiring:</h6>
+
 | TFT Pin | ESP32 Pin |
 |--------|----------|
 | VCC    | 3V3      |
@@ -21,6 +22,7 @@
 | BL     | 3V3      |
 
 <h6>BoM:</h6>
+
 | Name | Purpose | Cost Per Item (USD) | Quantity | Total (USD) | Link | Distributor |
 |------|---------|---------------------|----------|-------------|------|-------------|
 | 3D Printed Case | The physical body of the spotify display | 5.18 | 1 | 5.18 | https://robu.in/product/3d-printing-service/ | Robu |
