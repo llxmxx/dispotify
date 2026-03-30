@@ -22,6 +22,6 @@ BoM:
 |------|---------|---------------------|----------|-------------|------|-------------|
 | 3D Printed Case | The physical body of the spotify display | 5.18 | 1 | 5.18 | https://robu.in/product/3d-printing-service/ | Robu |
 | ESP32 | its used to connect to wi-fi and fetch data from spotify | 0.00 | 1 | 0.00 | | Robu |
-| 1.8" TFT Display | it displays the song currently playing along w its artist, and a basic ui | 0.00 | 1 | | Robu|
-| Breadboard | used to connect components without soldering | 0.00 | 1 | | Amazon |
+| 1.8" TFT Display | it displays the song currently playing along w its artist, and a basic ui | 0.00 | 1 | 0.00 | | Robu|
+| Breadboard | used to connect components without soldering | 0.00 | 1 | 0.00 | | Amazon |
 
