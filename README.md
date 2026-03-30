@@ -17,7 +17,8 @@ Wiring:
 | RST    | D4       |
 | BL     | 3V3      |
 
-BOM:
+BoM:
 | Name              | Purpose                                  | Cost Per Item (USD) | Quantity | Total (USD) | Link                                              | Distributor |
 |-------------------|------------------------------------------|---------------------|----------|-------------|---------------------------------------------------|-------------|
-| 3D Printed Case   | The physical body of the Spotify display | 5.26                | 1        | 5.26        | https://robu.in/product/3d-printing-service/      | Robu        |
+| 3D Printed Case   | The physical body of the spotify display | 5.18                | 1        | 5.26        | https://robu.in/product/3d-printing-service/      | Robu        |
+| ESP32             | 	its used to connect to wi-fi and fetch data from spotify| 0.00 | 1      | 0.00        | | Robu|
