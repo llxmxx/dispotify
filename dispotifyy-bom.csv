@@ -1,0 +1,6 @@
+Name,Purpose,Quantity,Total Cost (USD),Link,Distributor
+"Buttons","the physical controls to play/pause, next, previous(already have it)",3,0.00,"","Robu"
+"Breadboard","used to connect components without soldering(already have it)",1,0.00,"","Amazon"
+"1.8"" TFT Display","it displays the song currently playing along w its artist, and a basic ui(already have it)",1,0.00,"","Robu"
+"ESP32","its used to connect to wi-fi and fetch data from spotify(already have it)",1,0.00,"","Robu"
+"3D Printed Case","the physical body of the spotify display(already have it)",1,5.22,"https://robu.in/product/3d-printing-service/","Robu"
