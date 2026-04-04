@@ -25,7 +25,7 @@ String lastTrack = "";
 String lastArtist = "";
 
 unsigned long songStartTime = 0;
-int fakeDuration = 180000; // 3 mins
+int fakeDuration = 180000;
 
 #define SPOTIFY_GREEN 0x07E0
 
@@ -106,7 +106,7 @@ void setup() {
     tft.setTextColor(SPOTIFY_GREEN);
     tft.setTextSize(1);
     tft.setCursor(35, 5);
-    tft.print("hii tanishkaa");
+    tft.print("hii [name]");
 
     sp.begin();
     tft.setTextColor(ST77XX_WHITE);
